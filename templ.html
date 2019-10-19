@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><?=$title?></title>
+</head>
+<body>
+    <?switch($page) {
+        case 'read':
+            echo renderCoursesTable($conn);
+            echo renderAddForm();
+            break;
+        case 'update':
+            echo renderCoursesTable($conn);
+            echo renderEditForm($conn, $_GET['id']);
+            break;
+        case 'delete':
+            echo renderDeleteSubmitionForm($_GET['id']);
+            break;
+    }?>
+</body>
+</html>

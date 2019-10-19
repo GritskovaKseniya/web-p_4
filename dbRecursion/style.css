@@ -1,0 +1,15 @@
+.menu {
+	height: 400px;
+    width: 400px;
+    border: 4px double black;
+    float: left;
+    margin-right: 3px;
+}
+
+.content {
+    height: 400px;
+    width: 400px;
+    margin: 1px;
+    border: 1px solid black;
+    display: inline-block;
+}
